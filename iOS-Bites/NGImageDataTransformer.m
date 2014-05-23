@@ -79,14 +79,14 @@
   
   // Convert the bitmap context to an image
   CGImageRef imageRef = CGBitmapContextCreateImage(context);
-	UIImage *image = [UIImage imageWithCGImage:imageRef];
+  UIImage *image = [UIImage imageWithCGImage:imageRef];
   
   // Release the memory used for the drawing context
   CGColorSpaceRelease(colorSpace);
-	CGContextRelease(context);
+  CGContextRelease(context);
   CFRelease(imageRef);
   
-	return image;
+  return image;
 }
 
 
@@ -110,11 +110,11 @@
   CGContextDrawImage(context, (CGRect){.size = image.size}, image.CGImage);
   
   // Get the byte representation of the image drawn into the context
-	Byte *bytes = CGBitmapContextGetData(context);
+  Byte *bytes = CGBitmapContextGetData(context);
   
   // Release the memory used for the drawing context
   CGColorSpaceRelease(colorSpace);
-	CGContextRelease(context);
+  CGContextRelease(context);
   
   // Move the image bytes into an NSData construct
   // Es **muy importante** that this is created before freeing the void array
@@ -124,7 +124,7 @@
   // Es **muy importante** that this is released after creating the NSData object
   free(imageData);
   
-	return data;
+  return data;
 }
 
 

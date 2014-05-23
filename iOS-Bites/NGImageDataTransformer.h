@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 James Womack. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 #define ImageDataTransformer NGImageDataTransformer.sharedImageDataTransformer
 

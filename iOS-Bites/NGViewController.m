@@ -10,10 +10,14 @@
 #import "NGViewController.h"
 #import "NGImageDataTransformer.h"
 
-@interface NGViewController ()
-@property (weak, nonatomic)   IBOutlet UIImageView *imageView;
-@property (strong, nonatomic) UIImage  *image;
-@end
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-macros"
+
+#define GCD_MAIN_Q dispatch_get_main_queue()
+#define GCD_BG_Q   dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
+#pragma clang diagnostic pop
 
 
 @implementation NGViewController
@@ -27,10 +31,12 @@
     self.image = [UIImage imageNamed:@"iOS-Bites"];
   });
 
-  NSData *imageData = [ImageDataTransformer transformedValue:self.image];
-  
-  dispatch_async(GCD_MAIN_Q, ^{
-    self.imageView.image = [ImageDataTransformer reverseTransformedValue:imageData];
+  dispatch_sync(GCD_BG_Q, ^{
+    NSData *imageData = [ImageDataTransformer transformedValue:self.image];
+    
+    dispatch_async(GCD_MAIN_Q, ^{
+      self.imageView.image = [ImageDataTransformer reverseTransformedValue:imageData];
+    });
   });
 }
 

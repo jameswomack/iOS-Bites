@@ -4,15 +4,13 @@
 //  The contents of this file are implicitly included at the beginning of every source file.
 //
 
-#import <Availability.h>
+@import Darwin.Availability;
 
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
 #ifdef __OBJC__
-  #import <UIKit/UIKit.h>
-  #import <Foundation/Foundation.h>
-  #define GCD_MAIN_Q dispatch_get_main_queue()
-  #define GCD_BG_Q   dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+  @import UIKit;
+  @import Foundation;
 #endif

@@ -13,8 +13,7 @@
 		1B7C2E58192DE13C00CA3FC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E56192DE13C00CA3FC4 /* InfoPlist.strings */; };
 		1B7C2E5A192DE13C00CA3FC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E59192DE13C00CA3FC4 /* main.m */; };
 		1B7C2E5E192DE13C00CA3FC4 /* NGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E5D192DE13C00CA3FC4 /* NGAppDelegate.m */; };
-		1B7C2E61192DE13C00CA3FC4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E5F192DE13C00CA3FC4 /* Main_iPhone.storyboard */; };
-		1B7C2E64192DE13C00CA3FC4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E62192DE13C00CA3FC4 /* Main_iPad.storyboard */; };
+		1B7C2E61192DE13C00CA3FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E5F192DE13C00CA3FC4 /* Main.storyboard */; };
 		1B7C2E67192DE13C00CA3FC4 /* NGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E66192DE13C00CA3FC4 /* NGViewController.m */; };
 		1B7C2E69192DE13C00CA3FC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E68192DE13C00CA3FC4 /* Images.xcassets */; };
 		1B7C2E70192DE13C00CA3FC4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7C2E6F192DE13C00CA3FC4 /* XCTest.framework */; };
@@ -22,6 +21,8 @@
 		1B7C2E72192DE13C00CA3FC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7C2E51192DE13C00CA3FC4 /* UIKit.framework */; };
 		1B7C2E7A192DE13C00CA3FC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E78192DE13C00CA3FC4 /* InfoPlist.strings */; };
 		1B7C2E7C192DE13C00CA3FC4 /* iOS_BitesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E7B192DE13C00CA3FC4 /* iOS_BitesTests.m */; };
+		1B7C2E8B192DE42500CA3FC4 /* iOS-Bites.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E8A192DE42500CA3FC4 /* iOS-Bites.png */; };
+		1B7C2E8F192EDA2400CA3FC4 /* NGImageDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E8E192EDA2400CA3FC4 /* NGImageDataTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,7 @@
 		1B7C2E5B192DE13C00CA3FC4 /* iOS-Bites-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Bites-Prefix.pch"; sourceTree = "<group>"; };
 		1B7C2E5C192DE13C00CA3FC4 /* NGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGAppDelegate.h; sourceTree = "<group>"; };
 		1B7C2E5D192DE13C00CA3FC4 /* NGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAppDelegate.m; sourceTree = "<group>"; };
-		1B7C2E60192DE13C00CA3FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		1B7C2E63192DE13C00CA3FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		1B7C2E60192DE13C00CA3FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B7C2E65192DE13C00CA3FC4 /* NGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGViewController.h; sourceTree = "<group>"; };
 		1B7C2E66192DE13C00CA3FC4 /* NGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGViewController.m; sourceTree = "<group>"; };
 		1B7C2E68192DE13C00CA3FC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +55,9 @@
 		1B7C2E77192DE13C00CA3FC4 /* iOS-BitesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-BitesTests-Info.plist"; sourceTree = "<group>"; };
 		1B7C2E79192DE13C00CA3FC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B7C2E7B192DE13C00CA3FC4 /* iOS_BitesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_BitesTests.m; sourceTree = "<group>"; };
+		1B7C2E8A192DE42500CA3FC4 /* iOS-Bites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS-Bites.png"; sourceTree = "<group>"; };
+		1B7C2E8D192EDA2400CA3FC4 /* NGImageDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGImageDataTransformer.h; sourceTree = "<group>"; };
+		1B7C2E8E192EDA2400CA3FC4 /* NGImageDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGImageDataTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +117,8 @@
 		1B7C2E53192DE13C00CA3FC4 /* iOS-Bites */ = {
 			isa = PBXGroup;
 			children = (
-				1B7C2E5C192DE13C00CA3FC4 /* NGAppDelegate.h */,
-				1B7C2E5D192DE13C00CA3FC4 /* NGAppDelegate.m */,
-				1B7C2E5F192DE13C00CA3FC4 /* Main_iPhone.storyboard */,
-				1B7C2E62192DE13C00CA3FC4 /* Main_iPad.storyboard */,
-				1B7C2E65192DE13C00CA3FC4 /* NGViewController.h */,
-				1B7C2E66192DE13C00CA3FC4 /* NGViewController.m */,
-				1B7C2E68192DE13C00CA3FC4 /* Images.xcassets */,
+				1B7C2E90192EDA2F00CA3FC4 /* NGImageDataTransformer */,
+				1B7C2E88192DE23C00CA3FC4 /* NGViewController */,
 				1B7C2E54192DE13C00CA3FC4 /* Supporting Files */,
 			);
 			path = "iOS-Bites";
@@ -129,10 +127,12 @@
 		1B7C2E54192DE13C00CA3FC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1B7C2E55192DE13C00CA3FC4 /* iOS-Bites-Info.plist */,
-				1B7C2E56192DE13C00CA3FC4 /* InfoPlist.strings */,
-				1B7C2E59192DE13C00CA3FC4 /* main.m */,
-				1B7C2E5B192DE13C00CA3FC4 /* iOS-Bites-Prefix.pch */,
+				1B7C2E5F192DE13C00CA3FC4 /* Main.storyboard */,
+				1B7C2E68192DE13C00CA3FC4 /* Images.xcassets */,
+				1B7C2E86192DE21C00CA3FC4 /* AppDelegate */,
+				1B7C2E87192DE22A00CA3FC4 /* Info */,
+				1B7C2E89192DE42500CA3FC4 /* Shared-Images */,
+				1B7C2E8C192DE43500CA3FC4 /* C-Initialization */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +155,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1B7C2E86192DE21C00CA3FC4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C2E5C192DE13C00CA3FC4 /* NGAppDelegate.h */,
+				1B7C2E5D192DE13C00CA3FC4 /* NGAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1B7C2E87192DE22A00CA3FC4 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C2E55192DE13C00CA3FC4 /* iOS-Bites-Info.plist */,
+				1B7C2E56192DE13C00CA3FC4 /* InfoPlist.strings */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		1B7C2E88192DE23C00CA3FC4 /* NGViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C2E65192DE13C00CA3FC4 /* NGViewController.h */,
+				1B7C2E66192DE13C00CA3FC4 /* NGViewController.m */,
+			);
+			name = NGViewController;
+			sourceTree = "<group>";
+		};
+		1B7C2E89192DE42500CA3FC4 /* Shared-Images */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C2E8A192DE42500CA3FC4 /* iOS-Bites.png */,
+			);
+			path = "Shared-Images";
+			sourceTree = SOURCE_ROOT;
+		};
+		1B7C2E8C192DE43500CA3FC4 /* C-Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C2E59192DE13C00CA3FC4 /* main.m */,
+				1B7C2E5B192DE13C00CA3FC4 /* iOS-Bites-Prefix.pch */,
+			);
+			name = "C-Initialization";
+			sourceTree = "<group>";
+		};
+		1B7C2E90192EDA2F00CA3FC4 /* NGImageDataTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				1B7C2E8D192EDA2400CA3FC4 /* NGImageDataTransformer.h */,
+				1B7C2E8E192EDA2400CA3FC4 /* NGImageDataTransformer.m */,
+			);
+			name = NGImageDataTransformer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B7C2E7F192DE13C00CA3FC4 /* Build configuration list for PBXNativeTarget "iOS-Bites" */;
 			buildPhases = (
+				1B7C2E85192DE18300CA3FC4 /* Increment Build Number */,
 				1B7C2E46192DE13C00CA3FC4 /* Sources */,
 				1B7C2E47192DE13C00CA3FC4 /* Frameworks */,
 				1B7C2E48192DE13C00CA3FC4 /* Resources */,
@@ -232,10 +286,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7C2E64192DE13C00CA3FC4 /* Main_iPad.storyboard in Resources */,
 				1B7C2E69192DE13C00CA3FC4 /* Images.xcassets in Resources */,
-				1B7C2E61192DE13C00CA3FC4 /* Main_iPhone.storyboard in Resources */,
+				1B7C2E61192DE13C00CA3FC4 /* Main.storyboard in Resources */,
 				1B7C2E58192DE13C00CA3FC4 /* InfoPlist.strings in Resources */,
+				1B7C2E8B192DE42500CA3FC4 /* iOS-Bites.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,11 +303,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B7C2E85192DE18300CA3FC4 /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B7C2E46192DE13C00CA3FC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7C2E8F192EDA2400CA3FC4 /* NGImageDataTransformer.m in Sources */,
 				1B7C2E67192DE13C00CA3FC4 /* NGViewController.m in Sources */,
 				1B7C2E5A192DE13C00CA3FC4 /* main.m in Sources */,
 				1B7C2E5E192DE13C00CA3FC4 /* NGAppDelegate.m in Sources */,
@@ -287,20 +359,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1B7C2E5F192DE13C00CA3FC4 /* Main_iPhone.storyboard */ = {
+		1B7C2E5F192DE13C00CA3FC4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1B7C2E60192DE13C00CA3FC4 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		1B7C2E62192DE13C00CA3FC4 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B7C2E63192DE13C00CA3FC4 /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		1B7C2E78192DE13C00CA3FC4 /* InfoPlist.strings */ = {

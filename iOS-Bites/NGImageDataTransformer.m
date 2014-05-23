@@ -90,7 +90,7 @@
 }
 
 
-+ (NSData *)dataForImage:(UIImage *)image; {
++ (NSData *)dataForImage:(UIImage *)image {
   // Image dimensions
   CGSize imageSize = image.size;
   CGFloat height = imageSize.height;

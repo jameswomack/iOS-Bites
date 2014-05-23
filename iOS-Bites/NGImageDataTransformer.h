@@ -13,4 +13,6 @@
 @interface NGImageDataTransformer : NSValueTransformer
 + (instancetype)sharedInstance;
 + (instancetype)sharedImageDataTransformer;
++ (NSData *)dataForImage:(UIImage *)image;
++ (UIImage *)imageWithBytes:(Byte *)bytes andSize:(CGSize)imageSize;
 @end

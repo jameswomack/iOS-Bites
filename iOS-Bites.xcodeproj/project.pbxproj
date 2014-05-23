@@ -20,7 +20,7 @@
 		1B7C2E71192DE13C00CA3FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7C2E4D192DE13C00CA3FC4 /* Foundation.framework */; };
 		1B7C2E72192DE13C00CA3FC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B7C2E51192DE13C00CA3FC4 /* UIKit.framework */; };
 		1B7C2E7A192DE13C00CA3FC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E78192DE13C00CA3FC4 /* InfoPlist.strings */; };
-		1B7C2E7C192DE13C00CA3FC4 /* iOS_BitesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E7B192DE13C00CA3FC4 /* iOS_BitesTests.m */; };
+		1B7C2E7C192DE13C00CA3FC4 /* NGImageDataTransformerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E7B192DE13C00CA3FC4 /* NGImageDataTransformerTests.m */; };
 		1B7C2E8B192DE42500CA3FC4 /* iOS-Bites.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E8A192DE42500CA3FC4 /* iOS-Bites.png */; };
 		1B7C2E8F192EDA2400CA3FC4 /* NGImageDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E8E192EDA2400CA3FC4 /* NGImageDataTransformer.m */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,7 @@
 		1B7C2E6F192DE13C00CA3FC4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1B7C2E77192DE13C00CA3FC4 /* iOS-BitesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-BitesTests-Info.plist"; sourceTree = "<group>"; };
 		1B7C2E79192DE13C00CA3FC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1B7C2E7B192DE13C00CA3FC4 /* iOS_BitesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_BitesTests.m; sourceTree = "<group>"; };
+		1B7C2E7B192DE13C00CA3FC4 /* NGImageDataTransformerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGImageDataTransformerTests.m; sourceTree = "<group>"; };
 		1B7C2E8A192DE42500CA3FC4 /* iOS-Bites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS-Bites.png"; sourceTree = "<group>"; };
 		1B7C2E8D192EDA2400CA3FC4 /* NGImageDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGImageDataTransformer.h; sourceTree = "<group>"; };
 		1B7C2E8E192EDA2400CA3FC4 /* NGImageDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGImageDataTransformer.m; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		1B7C2E75192DE13C00CA3FC4 /* iOS-BitesTests */ = {
 			isa = PBXGroup;
 			children = (
-				1B7C2E7B192DE13C00CA3FC4 /* iOS_BitesTests.m */,
+				1B7C2E7B192DE13C00CA3FC4 /* NGImageDataTransformerTests.m */,
 				1B7C2E76192DE13C00CA3FC4 /* Supporting Files */,
 			);
 			path = "iOS-BitesTests";
@@ -336,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7C2E7C192DE13C00CA3FC4 /* iOS_BitesTests.m in Sources */,
+				1B7C2E7C192DE13C00CA3FC4 /* NGImageDataTransformerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +414,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
 			};
 			name = Debug;
 		};
@@ -447,6 +451,10 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
 			};
 			name = Release;
 		};

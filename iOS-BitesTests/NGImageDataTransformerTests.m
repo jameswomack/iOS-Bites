@@ -37,14 +37,20 @@
 
 - (void)testTransformedValue {
   id transformedValue = [self.transformer transformedValue:self.image];
-  XCTAssertTrue([transformedValue isKindOfClass:NSData.class], @"%@ %@", transformedValue, @"is NSData");
+  XCTAssertTrue([transformedValue isKindOfClass:NSData.class], @"%@ %@", transformedValue, @"is not NSData");
 }
 
 
 - (void)testReverseTransformedValue {
   id transformedValue = [self.transformer transformedValue:self.image];
   id reverseTransformedValue = [self.transformer reverseTransformedValue:transformedValue];
-  XCTAssertTrue([reverseTransformedValue isKindOfClass:UIImage.class], @"%@ %@", reverseTransformedValue, @"is UIImage");
+  XCTAssertTrue([reverseTransformedValue isKindOfClass:UIImage.class], @"%@ %@", reverseTransformedValue, @"is not UIImage");
+}
+
+
+- (void)testSharedInstance {
+  NGImageDataTransformer *sharedTransformer = [self.transformer.class sharedInstance];
+  XCTAssertTrue([sharedTransformer isKindOfClass:NGImageDataTransformer.class], @"%@ %@", sharedTransformer, @"is not NGImageDataTransformer");
 }
 
 

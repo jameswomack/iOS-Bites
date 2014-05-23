@@ -24,6 +24,7 @@
 		1B7C2E8B192DE42500CA3FC4 /* iOS-Bites.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B7C2E8A192DE42500CA3FC4 /* iOS-Bites.png */; };
 		1B7C2E8F192EDA2400CA3FC4 /* NGImageDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2E8E192EDA2400CA3FC4 /* NGImageDataTransformer.m */; };
 		1B7C2ED1192F35B000CA3FC4 /* NGViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2ED0192F35B000CA3FC4 /* NGViewControllerTests.m */; };
+		1B7C2ED4192F3F7B00CA3FC4 /* NGAppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7C2ED3192F3F7B00CA3FC4 /* NGAppDelegateTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		1B7C2E8D192EDA2400CA3FC4 /* NGImageDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGImageDataTransformer.h; sourceTree = "<group>"; };
 		1B7C2E8E192EDA2400CA3FC4 /* NGImageDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGImageDataTransformer.m; sourceTree = "<group>"; };
 		1B7C2ED0192F35B000CA3FC4 /* NGViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGViewControllerTests.m; sourceTree = "<group>"; };
+		1B7C2ED3192F3F7B00CA3FC4 /* NGAppDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGAppDelegateTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				1B7C2E7B192DE13C00CA3FC4 /* NGImageDataTransformerTests.m */,
 				1B7C2ED0192F35B000CA3FC4 /* NGViewControllerTests.m */,
+				1B7C2ED3192F3F7B00CA3FC4 /* NGAppDelegateTests.m */,
 				1B7C2E76192DE13C00CA3FC4 /* Supporting Files */,
 			);
 			path = "iOS-BitesTests";
@@ -341,6 +344,7 @@
 			files = (
 				1B7C2E7C192DE13C00CA3FC4 /* NGImageDataTransformerTests.m in Sources */,
 				1B7C2ED1192F35B000CA3FC4 /* NGViewControllerTests.m in Sources */,
+				1B7C2ED4192F3F7B00CA3FC4 /* NGAppDelegateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

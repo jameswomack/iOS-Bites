@@ -20,7 +20,8 @@
 {
   [super setUp];
   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-  self.controller = [storyboard instantiateViewControllerWithIdentifier:@"main"];
+  self.controller = [NGViewController.alloc init]; // for code coverage
+  self.controller = (NGViewController *)[storyboard instantiateViewControllerWithIdentifier:@"main"];
   [self.controller performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
 }
 

@@ -18,20 +18,12 @@ extern void __gcov_flush();
 
 - (BOOL)application:(UIApplication *)__unused application
 didFinishLaunchingWithOptions:(NSDictionary *)__unused launchOptions {
-  [self GCov];
   return YES;
 }
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)__unused application {
   __gcov_flush();
-}
-
-
-- (void)GCov {
-  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-  NSString *documentsDirectory = paths[0];
-  setenv("GCOV_PREFIX", [documentsDirectory cStringUsingEncoding:NSUTF8StringEncoding], 1);
 }
 
 
